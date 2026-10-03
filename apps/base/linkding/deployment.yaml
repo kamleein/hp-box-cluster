@@ -13,7 +13,7 @@ spec:
         app: linkding
     spec:
       securityContext:
-        #runAsNonRoot: true
+        runAsNonRoot: true
         runAsUser: 33
         runAsGroup: 33
         fsGroup: 33
