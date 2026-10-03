@@ -1,5 +1,5 @@
 spiVersion: kustomize.toolkit.fluxcd.io/v1
-kind: kustomization
+kind: Kustomization
 metadata:
   name: apps
   namespace: flux-system
