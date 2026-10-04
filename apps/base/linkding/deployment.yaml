@@ -32,7 +32,7 @@ spec:
             #- configMapRef:
             #  name: linkding-configmap
             - secretRef:
-              name: linkding-container-env
+                name: linkding-container-env
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
