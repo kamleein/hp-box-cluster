@@ -28,6 +28,11 @@ spec:
               name: linkding-data
           ports:
             - containerPort: 9090
+          envFrom:
+            #- configMapRef:
+            #  name: linkding-configmap
+            - secretRef:
+              name: linkding-container-env
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
