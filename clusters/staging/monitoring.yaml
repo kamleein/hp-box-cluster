@@ -31,7 +31,7 @@ spec:
     provider: sops
     secretRef:
       name: sops-age
-   	tls:
+    tls:
       - secretName: grafana-tls-secret
         hosts:
           - grafana.kamlee.in
