@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: linkding.kamlee.in
+    - host: lds.kamlee.in
       http:
         paths:
           - backend:
