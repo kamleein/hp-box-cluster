@@ -28,11 +28,10 @@ spec:
   values:
     grafana:
       adminPassword: mischa
-      namespaceOverride: "monitoring"
-    ingress:
-      enabled: true
-      ingressClassName: traefik
-      hosts:
-        - grafana.kamlee.in
-      path: /
-      pathType: Prefix
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+        hosts:
+          - grafana.kamlee.in
+        path: /
+        pathType: Prefix
