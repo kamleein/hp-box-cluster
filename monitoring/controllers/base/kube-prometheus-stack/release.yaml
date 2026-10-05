@@ -33,5 +33,3 @@ spec:
         ingressClassName: traefik
         hosts:
           - grafana.kamlee.in
-        path: /
-        pathType: Prefix
