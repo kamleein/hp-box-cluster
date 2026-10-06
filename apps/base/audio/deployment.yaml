@@ -12,7 +12,7 @@ spec:
       labels:
         app: audio
     spec:
-     securityContext:
+      securityContext:
         runAsNonRoot: true
         runAsUser: 1000
         runAsGroup: 1000
