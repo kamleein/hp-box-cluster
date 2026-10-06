@@ -12,11 +12,11 @@ spec:
       labels:
         app: audio
     spec:
-      #securityContext:
-      #  runAsNonRoot: true
-      #  runAsUser: 33
-      #  runAsGroup: 33
-      #  fsGroup: 33
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 99
+        runAsGroup: 100
+        fsGroup: 100
       containers:
         - name: audiobookshelf
           image: advplyr/audiobookshelf:2.35.0
@@ -25,8 +25,8 @@ spec:
           env:
             - name: TZ
               value: "America/Toronto"
-      #    securityContext:
-      #      allowPrivilegeEscalation: false
+          securityContext:
+            allowPrivilegeEscalation: false
 
           volumeMounts:
             - name: audio-storage
