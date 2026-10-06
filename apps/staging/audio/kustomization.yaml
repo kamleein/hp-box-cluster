@@ -3,4 +3,3 @@ kind: Kustomization
 namespace: audio
 resources:
   - ../../base/audio
-  - linkding-container-env-secret.yaml
