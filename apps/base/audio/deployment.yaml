@@ -29,18 +29,18 @@ spec:
       #      allowPrivilegeEscalation: false
 
           volumeMounts:
-      - name: audio-storage
-        mountPath: /config
-        subPath: config
-      - name: audio-storage
-        mountPath: /metadata
-        subPath: metadata
-      - name: audio-storage
-        mountPath: /audiobooks
-        subPath: audiobooks
-      - name: audio-storage
-        mountPath: /podcasts
-        subPath: podcasts
+            - name: audio-storage
+              mountPath: /config
+              subPath: config
+            - name: audio-storage
+              mountPath: /metadata
+              subPath: metadata
+            - name: audio-storage
+              mountPath: /audiobooks
+              subPath: audiobooks
+            - name: audio-storage
+              mountPath: /podcasts
+              subPath: podcasts
 
       volumes:
         - name: audio-storage
