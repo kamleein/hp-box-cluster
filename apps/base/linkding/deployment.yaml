@@ -23,9 +23,8 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false
           volumeMounts:
-            - &data-mount
+            - name: linkding-data
               mountPath: /etc/linkding/data
-              name: linkding-data
           ports:
             - containerPort: 9090
           envFrom:
